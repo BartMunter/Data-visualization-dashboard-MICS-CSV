@@ -1,0 +1,198 @@
+/* ------------------------- Dashboard ------------------------- */
+#tabbar {
+	display: flex;
+	flex: 0 1 1px;
+}
+
+.tabbutton {
+	flex: 1 1 auto;
+	text-align: center;
+	align-items: center;
+	vertical-align: middle;
+	line-height: 60px;
+	background: #1C4E80;
+	color: #F1F1F1;
+	transition: background 0.2s ease-in-out;
+}
+.tabbutton span {
+	text-align: center;
+	font-size: 30px;
+}
+.tabbutton.unselected:hover {
+	background: #0091D5;
+	transition: background 0.2s ease-in-out;
+}
+.tabbutton.selected {
+	background: #F1F1F1;
+	transition: background 0.1s ease-in-out;
+	color: #202020;
+}
+
+.visualizationtab {
+	height: auto;
+	overflow-y: auto;
+	flex: auto;
+	padding: 20px;
+	background: #F1F1F1;
+	display: flex;
+}
+
+.hiddentab {
+	display: none;
+}
+
+.showntab {
+	height: 1 1 1000px;
+}
+
+.screen {
+	height: 100%;
+	background: #FFFFFF;
+	display: flex;
+	flex-flow: column;
+}
+
+html {
+	height: 100%;
+	background: #F1F1F1;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	background: #F1F1F1;
+	color: #202020;
+	font-family: DejaVu sans;
+}
+
+#filedialog {
+	margin: auto;
+}
+
+
+
+
+/* ------------------------- Parallel Coordinates ------------------------- */
+
+#parallel-coordinates_checkboxes {
+	display: flex;
+	flex-flow: column;
+	flex-wrap: wrap;
+}
+
+#parallel-coordinates_checkboxes div {
+	margin: 3px;
+	width: 200px;
+}
+
+#parallel-coordinates_container svg {
+  font: 10px sans-serif;
+}
+
+#parallel-coordinates_container .background path {
+  fill: none;
+  stroke: #ddd;
+  shape-rendering: crispEdges;
+}
+
+#parallel-coordinates_container .foreground path {
+  fill: none;
+  stroke: steelblue;
+}
+
+#parallel-coordinates_container .brush .extent {
+  fill-opacity: .3;
+  stroke: #fff;
+  shape-rendering: crispEdges;
+}
+
+#parallel-coordinates_container .axis line,
+#parallel-coordinates_container .axis path {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+#parallel-coordinates_container .axis text {
+  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+  cursor: move;
+}
+
+
+
+
+/* ------------------------- Bubble Chart ------------------------- */
+
+#bubble-chart_checkboxes {
+	display: flex;
+	flex-flow: column;
+	flex-wrap: wrap;
+}
+
+#bubble-chart_checkboxes div {
+	margin: 3px;
+	width: 200px;
+}
+
+#bubble-chart_container {
+  font: 11px sans-serif;
+}
+
+#bubble-chart_container .axis path,
+#bubble-chart_container .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+#bubble-chart_container .dot {
+  stroke: #000;
+}
+
+#bubble-chart_container .tooltip {
+  position: absolute;
+  width: 200px;
+  height: 28px;
+  font-size: 28px;
+  pointer-events: none;
+}
+
+
+
+
+/* ------------------------- Scatter Plot ------------------------- */
+
+#scatter-plot_checkboxes {
+	display: flex;
+	flex-flow: column;
+	flex-wrap: wrap;
+}
+
+#scatter-plot_checkboxes div {
+	margin: 3px;
+	width: 200px;
+}
+
+#scatter-plot_container {
+  font: 11px sans-serif;
+}
+
+#scatter-plot_container .axis path,
+#scatter-plot_container .axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+#scatter-plot_container .dot {
+  stroke-width: 0;
+}
+
+#scatter-plot_container .tooltip {
+  position: absolute;
+  width: 200px;
+  height: 28px;
+  font-size: 28px;
+  pointer-events: none;
+}

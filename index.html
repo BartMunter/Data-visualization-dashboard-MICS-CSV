@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+<link rel="stylesheet" type="text/css" href="bin/style.css">
+</head>
+<script src="tabs.js"></script>
+<script>
+	window.onload = function() {
+		document.getElementById("filedialog").onchange = function(event) {
+			var tmppath = URL.createObjectURL(event.target.files[0]);
+			console.log(tmppath);
+			window.location.href = "bin/dashboard.html?file=" + tmppath;
+		};
+	};
+</script>
+<body>
+<div class="screen" id="loading-screen">
+	<div id="tabbar">
+ 		<div class='tabbutton selected'><span>Select File</span></div> 
+	</div>
+
+	<div data-visualization-title="Select File" class="visualizationtab showntab">
+			<span id="filedialog"><input name="file" type="file"></input></span>
+		</form>
+	</div>
+
+</div>
+</body>
